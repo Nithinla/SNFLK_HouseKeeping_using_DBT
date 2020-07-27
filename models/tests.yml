@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: active_base_tables
+    description: Has the tables info which are active in the warehouse (1.e. not deleted)
+    columns:
+      - name: TABLE_NAME
+        description: Has the table name info ins snowflake
+        tests:
+          - unique
+          - not_null
+      - name: CREATED
+        description: Gives information of when the table was CREATED in snowflake

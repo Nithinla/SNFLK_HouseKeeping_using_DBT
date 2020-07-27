@@ -33,5 +33,5 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   snowflake_housekeeping:
       # Applies to all files under models/example/
-      example:
-          materialized: view
+      House_keeping:
+          materialized: table
